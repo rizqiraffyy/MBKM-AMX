@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script 
+        src="https://kit.fontawesome.com/64d58efce2.js"
+        crossorigin="anonymous">
+    </script>
+    <title>Authentication</title>
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="signin-signup">
+                <form action="login.php" method="POST" class="sign-in-form">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class='bx bxs-envelope' ></i>
+                        <input type="email" name="email" placeholder="Email" require pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email address">
+                    </div>
+                    <div class="input-field">
+                        <i class='bx bx-lock'></i>
+                        <input type="password" name="password" placeholder="Password" required>
+                    </div>
+                    <input type="submit" value="Sign In" class="btn solid">
+                    <p class="social-text">Or Sign in with social platform</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class='bx bxl-google' ></i></a>
+                        <a href="#" class="social-icon"><i class='bx bxl-facebook' ></i></a>
+                        <a href="#" class="social-icon"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                </form>
+
+                <form action="register.php" method="POST" class="sign-up-form">
+                    <h2 class="title">Sign Up</h2>
+                    <div class="input-field">
+                        <i class='bx bx-user' ></i>
+                        <input type="text" name="fullname" placeholder="Full Name" required pattern="^[a-zA-Z\s]+$" title="Full name should contain only letters and spaces">
+                    </div>
+                    <div class="input-field">
+                        <i class='bx bxs-user-badge' ></i>
+                        <input type="text" name="username" placeholder="Username" required minlength="3" maxlength="20" pattern="^[a-zA-Z0-9_]+$" title="Username must be alphanumeric and can include underscores, with a length between 3 to 20 characters">
+                    </div>
+                    <div class="input-field">
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" name="email" placeholder="Email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Enter a valid email address">
+                    </div>
+                    <div class="input-field">
+                        <i class='bx bx-lock'></i>
+                        <input type="password" name="password" placeholder="Password" required>
+                    </div>      
+                    <input type="submit" value="Sign Up" class="btn solid">
+                    <p class="social-text">Or Sign up with social platform</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class='bx bxl-google' ></i></a>
+                        <a href="#" class="social-icon"><i class='bx bxl-facebook' ></i></a>
+                        <a href="#" class="social-icon"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New here ?</h3>
+                    <p>Welcome! Create an account to enjoy our services and stay connected. It's quick and easy!</p>
+                    <button class="btn transparent" id="sign-up-btn" >Sign Up</button>
+                </div>
+                <img src="assets/images/signup.svg" class="image" alt="">
+            </div>
+
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>One of us ?</h3>
+                    <p>Welcome back! Log in to access your account and continue where you left off.</p>
+                    <button class="btn transparent" id="sign-in-btn" >Sign In</button>
+                </div>
+                <img src="assets/images/signin.svg" class="image" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

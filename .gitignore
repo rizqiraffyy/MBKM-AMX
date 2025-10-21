@@ -1,0 +1,58 @@
+/.next/
+/out/
+/vendor/
+/node_modules/
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Laravel specific
+bootstrap/compiled.php
+app/storage/
+public/storage
+public/hot
+public_html/storage
+public_html/hot
+storage/*.key
+Homestead.yaml
+Homestead.json
+/.vagrant
+.phpunit.result.cache
+/public/build
+/storage/pail
+.phpactor.json
+auth.json
+
+# Environment files
+.env
+.env*
+.env.backup
+.env.production
+
+# Next.js
+/.next/
+/out/
+
+# Testing
+/coverage
+
+# Production
+/build
+
+# Misc
+.DS_Store
+*.pem
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
